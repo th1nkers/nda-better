@@ -41,3 +41,21 @@
     cursor: pointer;
     box-shadow: 0 0 10px rgba(3, 2, 58, 0.5);
 }
+
+@media only screen and (max-width: 770px) {
+    .architectural-elegance{
+        height: 25rem;
+        gap: 4vw;
+        margin-bottom: 4vw;
+    }
+    
+    .architectural-elegance>img{
+        width: 15vw;
+    }
+    
+    #architectural-header{
+        font-size: 6vw;
+    }
+    
+   
+}

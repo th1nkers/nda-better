@@ -7,6 +7,7 @@ import ndaSong from "../assets/home/news-events-section/nda-song.mp4";
 import { DefaultPlayer as Video } from "react-html5video/dist";
 import "react-html5video/dist/styles.css";
 import thumb from "../assets/home/news-events-section/thumb.jpg";
+import sample from "../assets/home/news-events-section/pdf/sample.pdf";
 import { useInView } from "react-intersection-observer";
 
 const NewsAndEvents = () => {

@@ -126,3 +126,49 @@
     font-size: 1vw;
     font-weight: bold;
 }
+
+
+@media only screen and (max-width: 770px) {
+
+    .cammandantMsg-section {
+        height: 14rem;
+    }
+    
+    .cammandant-msg {
+        width: 100%;
+        gap: 2vw;
+    }
+    
+    .cammandant-msg-detail {
+        align-items: flex-start;
+    }
+
+    .celebration-logo {
+        display: none;
+    }
+
+    .cammandant-img {
+        height: 70%;
+        width: 35%;
+    }
+    
+    .cammandant-msg-para {
+        height: 100%;
+        padding: 0 4px;
+    }
+
+    .cammandant-msg>h1 {
+       font-size: 4vw;
+       /* padding: 0; */
+       margin: 3px;
+    }
+
+    .cammandant-msg-para>p{
+        font-size: 2.4vw;
+    }
+
+    .cammandant-msg-para>p>button{
+        font-size: 2.6vw;
+        margin: 0;
+    }
+}

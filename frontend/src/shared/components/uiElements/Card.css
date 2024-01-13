@@ -4,3 +4,10 @@
     border-radius: 0 0 5px 5px;
     padding: 5px;
 }
+
+@media only screen and (max-width: 770px) {
+    .card-section{
+        border: unset;
+        padding: unset;
+    }
+}

@@ -7,10 +7,10 @@ const App = () => {
 
   const router = createBrowserRouter([
     {
-      path:'/',
-      element: <Root/>,
-      children:[
-        {index: true,element: <HomePage/>}
+      path: '/',
+      element: <Root />,
+      children: [
+        { index: true, element: <HomePage /> }
       ]
     }
   ])

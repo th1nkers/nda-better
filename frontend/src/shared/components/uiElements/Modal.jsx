@@ -31,7 +31,7 @@ const ModalOverlay = ({ onOpen, onClose, imgContent, msg, ...props }) => {
       <>
         <img src={imgContent.imgUrl} alt={imgContent.header} />
         <div className="modal-detail">
-          <Header dotted>{imgContent.header}</Header>
+          <Header id="modal-detail-header" dotted>{imgContent.header}</Header>
           <p>{imgContent.detail}</p>
         </div>
       </>

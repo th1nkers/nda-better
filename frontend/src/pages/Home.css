@@ -3,3 +3,9 @@
     flex-direction: column;
     gap: 1vw;
 }
+
+@media only screen and (max-width: 770px) {
+    .home-section{
+        gap: 4vw;
+    }
+}

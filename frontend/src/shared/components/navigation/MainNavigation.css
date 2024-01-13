@@ -1,21 +1,21 @@
-.main-logo{
+.main-logo {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: .4vw;
 }
 
-.main-logo>img{
+.main-logo>img {
     height: 5vw;
     width: 5vw;
 }
 
-.main-logo-header{
+.main-logo-header {
     display: flex;
     flex-direction: column;
 }
 
-.main-logo-header>h1{
+.main-logo-header>h1 {
     margin: 0;
     padding: 0;
     color: gold;
@@ -23,18 +23,37 @@
     font-size: 2.5vw;
 }
 
-.main-logo-header>h3{
+.main-logo-header>h1:hover {
+    cursor: default;
+}
+
+.main-logo-header>h3 {
     margin: 0;
     padding: 0;
     font-size: 1.4vw;
     color: gold;
 }
 
-.sudo-logo{
 
-}
-
-.sudo-logo>img{
+.sudo-logo>img {
     height: 5vw;
 }
 
+@media only screen and (max-width: 770px) {
+    .main-logo>img {
+        height: 15vw;
+        width: 15vw;
+    }
+
+    .main-logo-header>h1 {
+        font-size: 5.5vw;
+    }
+
+    .main-logo-header>h3 {
+        font-size: 3.5vw;
+    }
+
+    .sudo-logo {
+        display: none;
+    }
+}

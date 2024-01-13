@@ -6,7 +6,7 @@ import "./ImageSlider.css";
 const slideStyles = {
   width: "100%",
   height: "100%",
-  borderRadius: "15px",
+  borderRadius: "10px",
   backgroundSize: "cover",
   backgroundPosition: "center",
 };
