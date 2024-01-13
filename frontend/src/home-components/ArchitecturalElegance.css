@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Old+Standard+TT:ital@1&display=swap');
+
+
+.architectural-elegance{
+    height: 70rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vw;
+}
+
+.architectural-elegance>img{
+    width: 6vw;
+    border-radius: 10px;
+}
+
+#architectural-header{
+    font-size: 2.4vw;
+    display: flex;
+    align-items: center;
+    font-family: 'Dancing Script', cursive;
+    margin-top: -2rem;
+}
+
+.architectural-gallery{
+    height: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1vw;
+}
+
+.architectural-gallery>img{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+.architectural-gallery>img:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(3, 2, 58, 0.5);
+}

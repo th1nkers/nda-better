@@ -1,0 +1,12 @@
+.main-header{
+    background: linear-gradient(rgb(165, 11, 15) 12%, rgb(117, 8, 11) 74%);
+    top:0;
+    left: 0;
+    height: 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1vw;
+    /* border: 2px solid rgb(0, 19, 60); */
+}

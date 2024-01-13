@@ -1,0 +1,128 @@
+.cammandantMsg-section {
+    margin: 1vw 0;
+    height: 24rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 1vw;
+}
+
+.celebration-logo {
+    height: 95%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+
+.celebration-logo>h1 {
+    /* height: 18%; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.celebration-logo>img {
+    width: 60%;
+    height: 70%;
+    object-fit: cover;
+}
+
+.cammandant-msg {
+    height: 97.5%;
+    width: 70%;
+    border: 2px solid rgb(0, 19, 60);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .7vw;
+}
+
+.cammandant-msg>h1 {
+    margin: 0;
+    padding: 18px 10px;
+    font-size: 2vw;
+    font-weight: bold;
+    background-color: rgb(0, 19, 60);
+    border-radius: 5px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.cammandant-msg-detail {
+    height: 74%;
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1vw;
+    gap: 1vw;
+}
+
+/* .cammandant-msg-para-section{
+    height: 90%;
+    width: 100%;
+    padding: 0 1vw 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: .3vw;
+} */
+
+.cammandant-img {
+    height: 90%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+}
+
+.cammandant-img>img {
+    width: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.cammandant-msg-para {
+    height: 95%;
+    width: 100%;
+    overflow: auto ;
+    font-size: 1.2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1vw 0 0;
+}
+
+.cammandant-msg-para>p{
+    margin: 0;
+    text-align: justify;
+    font-size: 1.45vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.cammandant-msg-para>p>button{
+    text-transform: none;
+    font-size: 1.2vw;
+    font-weight: bold;
+    align-self: flex-end;
+    margin: -24px 0 0 0;
+}
+
+.cammandant-msg-footer{
+    align-self: flex-end;
+    padding-right: 1vw;
+}
+
+.cammandant-msg-footer>h3{
+    font-size: 1.3vw;
+    font-weight: bold;
+}
+
+.cammandant-msg-footer>h6{
+    margin: 0;
+    font-size: 1vw;
+    font-weight: bold;
+}
