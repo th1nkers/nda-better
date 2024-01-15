@@ -7,7 +7,6 @@ const DropdownMenu = (props) => {
   const { item } = props;
 
   return (
-    <>
       <div className="dropdown-menu">
         <div className="dropdown-inner">
           <ul className="dropdown-list-section">
@@ -21,11 +20,15 @@ const DropdownMenu = (props) => {
           </ul>
           <div className="dropdown-detail">
             <p>{item.subPara}</p>
+            <img
+              id="mobile-dropdown-img"
+              src={item.subImgUrl}
+              alt={item.subHeader}
+            />
           </div>
-          <img src={item.subImgUrl} alt="about-us" />
+          <img id="dropdown-img" src={process.env.REACT_APP_BASE_URL + item.subImgUrl} alt={item.subHeader} />
         </div>
       </div>
-    </>
   );
 };
 

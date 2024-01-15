@@ -32,31 +32,34 @@
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
-    gap: .1vw;
+    gap: .25vw;
 }
 
 .dropdown-list {
     width: 100%;
     list-style: none;
     border-radius: 5px;
-    text-align: center;
     display: flex;
     justify-content: flex-end;
 }
 
 .dropdown-list>button {
     text-transform: none;
-    font-size: 1vw;
+    font-size: .9vw;
     font-weight: bold;
 }
 
-.dropdown-list>button>a{
+.dropdown-list>button>a {
     text-decoration: none;
 }
 
 
 .dropdown-detail {
     width: 48%;
+}
+
+.dropdown-detail>img{
+    display: none;
 }
 
 .dropdown-detail>p {
@@ -70,4 +73,92 @@
     width: 40%;
     object-fit: cover;
     border-radius: 5px;
+}
+
+
+@media only screen and (max-width: 770px) {
+    .dropdown-menu {
+        z-index: 100;
+        position: absolute;
+        /* background-color: rgb(217, 21, 21); */
+        width: 94.2%;
+        height: 19.65rem;
+        left: 0;
+        top: 4.72rem;
+        padding: 0;
+        padding-bottom: 2.1rem;
+        margin-left: 2.7vw;
+    }
+
+    .dropdown-inner {
+        position: relative;
+        background-color: white;
+        border-radius: 10px;
+        margin-top: 1.85rem;
+        height: 89.5%;
+        padding: var(--padding);
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3vw;
+    }
+
+    .dropdown-list-section {
+        padding: unset;
+        width: 27%;
+        height: 100%;
+        /* background-color: rgb(211, 215, 223); */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        gap: 1.8vw;
+    }
+
+    .dropdown-list {
+        width: 100%;
+        list-style: none;
+        border-radius: 5px;
+        text-align: center;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .dropdown-list>button {
+        font-size: 1vw;
+        padding: 0 2px;
+    }
+
+    .dropdown-list>button>a {
+        text-decoration: none;
+        font-size:2.5vw;
+    }
+
+
+    .dropdown-detail {
+        width: 68%;
+        height: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .dropdown-detail>p {
+        text-align: justify;
+        font-size: 2.4vw;
+        padding-right: 1vw;
+    }
+
+    .dropdown-detail>img{
+        display: flex;
+        height: 25vw;
+        width: 30vw;
+
+    }
+
+    .dropdown-inner>img {
+        display: none;
+    }
+
 }

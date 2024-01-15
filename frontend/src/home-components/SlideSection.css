@@ -27,6 +27,12 @@
     font-size: 1.7vw;
 }
 
+#slider-header{
+    /* padding: 0vw 3vw; */
+    font-size: 2.2vw;
+
+}
+
 /* ------------------------------------------------ */
 
 @media only screen and (max-width: 770px) {

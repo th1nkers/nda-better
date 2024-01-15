@@ -43,7 +43,9 @@ const ImageSlider = ({ slides, onCurrent }) => {
 
   const slideStylesWidthBackground = {
     ...slideStyles,
-    backgroundImage: `url(${slides[currentIndex].url})`,
+    backgroundImage: `url(${
+      process.env.REACT_APP_BASE_URL + slides[currentIndex].url
+    })`,
   };
 
   onCurrent(currentIndex);

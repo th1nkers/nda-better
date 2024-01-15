@@ -2,21 +2,21 @@
     height: 3rem;
     background-color: rgb(0, 19, 60);
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 1vw;
     padding: 0 1vw 0 0 ;
 }
 
-/* .upper-subheader{
-    display: flex;
-    justify-content: flex-end;
+.upper-subheader{
+    display: none;
+    /* justify-content: flex-end;
     align-items: center;
     gap: 1vw;
-    padding: 4px 1vw;
+    padding: 4px 1vw; */
 }
 
-.upper-subheader>a{
+/* .upper-subheader>a{
     color: white;
     text-decoration: none;
     font-size: 1vw;
@@ -32,7 +32,9 @@
 
 .bottom-subheader{
     padding: 0;
+    margin: 0;
     height: 100%;
+    width: 100%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -59,19 +61,61 @@
 #nav-links{
     text-decoration: none;
     color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3vw;
 }
 
 @media only screen and (max-width: 770px) {
-    .subHeader{
-        height: 1rem;
-    }
 
-    .bottom-subheader{
+    .no-mobile-view-navlinks{
         display: none;
     }
 
-    .bottom-subheader>li{
-        font-size: 2vw;
+    .subHeader{
+        height: 4rem;
+        border-radius: 20px;
+        margin: -10px 0;
     }
-    
+
+    .bottom-subheader{
+        padding: 0;
+        margin: 0;
+        margin-left: 4px;
+        height: 100%;
+        /* width: 98%; */
+        display: flex;
+        justify-content: center;
+        gap: 1.9vw;
+    }
+
+    .bottom-subheader>li{
+        text-decoration: none;
+        padding: 0 .2vw;
+        font-size: 8vw;
+        border-radius: 12px;
+    }
+
+    .bottom-subheader>li:hover{
+        cursor: pointer;
+    }
+
+    .mobile-view-navlinks{
+        
+    }
+
+    .mobile-view-navlinks>img{
+        display: flex;
+        align-items: center;
+        object-fit: cover;
+        background-color: white;
+        height: 1.7rem;
+        width: 1.7rem;
+        border-radius:5px;
+    }
+
+    #nav-links{
+        font-size: 8vw;
+    }
 }

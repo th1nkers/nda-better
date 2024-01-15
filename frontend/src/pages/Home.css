@@ -4,8 +4,16 @@
     gap: 1vw;
 }
 
+.mobile-view-navlinks{
+    display: none;
+}
+
 @media only screen and (max-width: 770px) {
     .home-section{
         gap: 4vw;
+    }
+
+    .mobile-view-navlinks{
+        display: unset;
     }
 }

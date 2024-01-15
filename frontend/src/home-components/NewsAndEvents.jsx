@@ -48,33 +48,6 @@ const NewsAndEvents = () => {
               Accommodation.
             </p>
           </li>
-          <li>
-            <IoDocumentAttachOutline />
-            <p>
-              Procedure for Issue of NOC for Construction of Buildings & Other
-              Structures around, NDA 75 Glorious Years Celebration (GYC) - Grand
-              Finale 15 & 16 Jan 24 at NDA # Alumni Registration for
-              Accommodation.
-            </p>
-          </li>
-          <li>
-            <IoDocumentAttachOutline />
-            <p>
-              Procedure for Issue of NOC for Construction of Buildings & Other
-              Structures around, NDA 75 Glorious Years Celebration (GYC) - Grand
-              Finale 15 & 16 Jan 24 at NDA # Alumni Registration for
-              Accommodation.
-            </p>
-          </li>
-          <li>
-            <IoDocumentAttachOutline />
-            <p>
-              Procedure for Issue of NOC for Construction of Buildings & Other
-              Structures around, NDA 75 Glorious Years Celebration (GYC) - Grand
-              Finale 15 & 16 Jan 24 at NDA # Alumni Registration for
-              Accommodation.
-            </p>
-          </li>
         </ul>
       </Card>
     </div>

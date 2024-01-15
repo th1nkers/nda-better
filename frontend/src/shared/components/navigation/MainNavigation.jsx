@@ -6,6 +6,7 @@ import sudo from "../../../assets/home/sudo.png";
 import "./MainNavigation.css";
 
 const MainNavigation = () => {
+
   return (
     <>
       <MainHeader>
@@ -20,7 +21,9 @@ const MainNavigation = () => {
           <img src={sudo} alt="sudo-logo" />
         </div>
       </MainHeader>
-      <Navlinks />
+      <div className="no-mobile-view-navlinks">
+        <Navlinks />
+      </div>
     </>
   );
 };
