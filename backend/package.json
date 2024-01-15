@@ -7,7 +7,7 @@
     "nodemon": "^3.0.2"
   },
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "index.js"
   },
   "author": "suryaXth1nkers",
   "license": "ISC",
