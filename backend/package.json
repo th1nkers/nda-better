@@ -7,8 +7,7 @@
     "nodemon": "^3.0.2"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js"
+    "start": "nodemon index.js"
   },
   "author": "suryaXth1nkers",
   "license": "ISC",
