@@ -1,16 +1,14 @@
 import React, { useState } from "react";
-import "./NewsAndEvents.css";
 import Card from "../shared/components/uiElements/Card";
 import { IoDocumentAttachOutline } from "react-icons/io5";
 import Header from "../shared/components/uiElements/Header";
-import ndaSong from "../assets/home/news-events-section/nda-song.mp4";
 import { DefaultPlayer as Video } from "react-html5video/dist";
-import "react-html5video/dist/styles.css";
 import thumb from "../assets/home/news-events-section/thumb.jpg";
-import sample from "../assets/home/news-events-section/pdf/sample.pdf";
 import { useInView } from "react-intersection-observer";
+import "react-html5video/dist/styles.css";
+import "./NewsAndEvents.css";
 
-const NewsAndEvents = () => {
+const NewsAndEvents = ({ newsEventsData }) => {
   const [videoRef, inView] = useInView({
     triggerOnce: true,
   });
@@ -20,6 +18,8 @@ const NewsAndEvents = () => {
   const handleVideoPlay = () => {
     setVideoPlaying(true);
   };
+
+  console.log(newsEventsData[0].nda_video);
 
   return (
     <div className="news-and-events-section">
@@ -31,7 +31,7 @@ const NewsAndEvents = () => {
           poster={thumb}
           onPlay={handleVideoPlay}
         >
-          <source src={ndaSong} type="video/mp4" />
+          <source src={process.env.REACT_APP_BASE_URL + newsEventsData[0].nda_video} type="video/mp4" />
         </Video>
       </div>
       <Card className="news-and-events">

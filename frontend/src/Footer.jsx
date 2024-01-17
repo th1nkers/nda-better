@@ -1,6 +1,5 @@
 import React from "react";
 import "./Footer.css";
-import indiaGov from "./assets/shared/india-gov.png";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -8,7 +7,6 @@ const Footer = () => {
     <div className="footer-section">
       <div className="footer-detail">
         <div className="footer-img">
-          {/* <img src="https://presentations.gov.in/wp-content/uploads/2020/01/NE_Preview1.png?x39644" alt="india-emblem" /> */}
           <img
             src="https://www.mygov.in/sites/all/themes/mygov/front_assets/images/logo.svg"
             alt="my-gov"

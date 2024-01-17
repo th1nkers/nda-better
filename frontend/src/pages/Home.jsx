@@ -3,12 +3,13 @@ import SlideSection from "../home-components/SlideSection";
 import CommandantMsg from "../home-components/CommandantMsg";
 import NewsAndEvents from "../home-components/NewsAndEvents";
 import ArchitecturalElegance from "../home-components/ArchitecturalElegance";
-import "./Home.css";
 import Navlinks from "../shared/components/navigation/Navlinks";
 import { useHttpClient } from "../shared/hooks/http-hook";
+import Loading from "../shared/components/uiElements/Loading";
+import "./Home.css";
 
 const Home = () => {
-  const { isLoading, error, sendRequest, clearError } = useHttpClient();
+  const { isLoading, error, sendRequest } = useHttpClient();
   const [fetchData, setFetchData] = useState();
 
   useEffect(() => {
@@ -22,10 +23,10 @@ const Home = () => {
     };
 
     fetchedData();
-  }, []);
+  }, [sendRequest]);
 
   if (isLoading || !fetchData || fetchData.length === 0) {
-    return <>loading..</>;
+    return <Loading error={error} />;
   }
 
   return (
@@ -35,7 +36,7 @@ const Home = () => {
         <Navlinks />
       </div>
       <CommandantMsg msgData={fetchData?.home?.commandant_msg || []} />
-      <NewsAndEvents />
+      <NewsAndEvents newsEventsData={fetchData?.home?.news_events_data || []} />
       <ArchitecturalElegance
         architecturalData={fetchData?.home?.architecturalData || []}
       />

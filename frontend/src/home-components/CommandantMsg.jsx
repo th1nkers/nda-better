@@ -5,7 +5,6 @@ import Header from "../shared/components/uiElements/Header";
 import Button from "@mui/material/Button";
 import Modal from "../shared/components/uiElements/Modal";
 
-
 const CommandantMsg = ({msgData}) => {
   const [showModal, setShowModal] = useState(false);
 
