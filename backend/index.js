@@ -10,6 +10,7 @@ const app = express();
 
 const MONGO_URL = process.env.MONGO_URL;
 
+
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use((req, res, next) => {
@@ -24,7 +25,7 @@ app.use((req, res, next) => {
 
 app.use('/api', homeRoutes);
 
-app.use((req, res, next) => {
+app.use((err,req, res, next) => {
     const error = new HttpError('Could not find this route.', 404);
     throw error;
 });

@@ -6,12 +6,10 @@ import DropdownMenu from "../uiElements/DropdownMenu";
 import { useHttpClient } from "../../hooks/http-hook";
 import "./Navlinks.css";
 
-const NAV_ICON = {}
-
 const Navlinks = () => {
   const [dropdownVisibility, setDropdownVisibility] = useState({});
   const [fetchNavData, setFetchNavData] = useState([]);
-  const { isLoading, error, sendRequest, clearError } = useHttpClient();
+  const { isLoading, sendRequest } = useHttpClient();
 
   const handleMouseEnter = (item) => {
     setDropdownVisibility((prevState) => ({
@@ -38,7 +36,7 @@ const Navlinks = () => {
     };
 
     fetchNavData();
-  }, []);
+  }, [sendRequest]);
 
   if (isLoading || !fetchNavData || fetchNavData.length === 0) return;
 

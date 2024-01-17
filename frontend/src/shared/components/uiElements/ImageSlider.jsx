@@ -15,16 +15,7 @@ const ImageSlider = ({ slides, onCurrent }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [timer, SetTimer] = useState(0);
 
-  useEffect(() => {
-    const newTimer = setInterval(() => {
-      goToNext();
-    }, 5000);
-
-    SetTimer(newTimer);
-
-    return () => clearInterval(newTimer);
-  }, [currentIndex]);
-
+  
   const goToPrevious = () => {
     const isFirstSlide = currentIndex === 0;
     const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
@@ -36,6 +27,16 @@ const ImageSlider = ({ slides, onCurrent }) => {
     const newIndex = isLastSlide ? 0 : currentIndex + 1;
     setCurrentIndex(newIndex);
   };
+  
+  useEffect(() => {
+    const newTimer = setInterval(() => {
+      goToNext();
+    }, 5000);
+
+    SetTimer(newTimer);
+
+    return () => clearInterval(newTimer);
+  }, [currentIndex]);
 
   const goToSlide = (slideIndex) => {
     setCurrentIndex(slideIndex);
