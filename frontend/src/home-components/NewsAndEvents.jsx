@@ -5,10 +5,7 @@ import Header from "../shared/components/uiElements/Header";
 import { DefaultPlayer as Video } from "react-html5video/dist";
 import thumb from "../assets/home/news-events-section/thumb.jpg";
 import { useInView } from "react-intersection-observer";
-<<<<<<< HEAD
 import ndaVideo from "../assets/home/news-events-section/nda-video.mp4"
-=======
->>>>>>> 8a86d450ed0ee001c5f5824660f4517f52623d72
 import "react-html5video/dist/styles.css";
 import "./NewsAndEvents.css";
 
@@ -35,11 +32,7 @@ const NewsAndEvents = ({ newsEventsData }) => {
           poster={thumb}
           onPlay={handleVideoPlay}
         >
-<<<<<<< HEAD
           <source src={ndaVideo} type="video/mp4" />
-=======
-          <source src={process.env.REACT_APP_BASE_URL + newsEventsData[0].nda_video} type="video/mp4" />
->>>>>>> 8a86d450ed0ee001c5f5824660f4517f52623d72
         </Video>
       </div>
       <Card className="news-and-events">
